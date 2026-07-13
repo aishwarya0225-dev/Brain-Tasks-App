@@ -33,3 +33,26 @@ Kubernetes LoadBalancer Service
 ### 3. Deploy Stage
 - AWS CodePipeline deploys the application to Amazon EKS.
 - Kubernetes manifest files used:
+
+  
+**Deployment commands:**
+
+```bash
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+**- Monitor**
+CloudWatch Logs are used to monitor:
+
+CodeBuild logs
+Deployment execution logs
+Application logs
+
+**Technologies Used**
+GitHub
+AWS CodePipeline
+AWS CodeBuild
+Amazon EKS
+Kubernetes
+Docker
+Amazon CloudWatch
